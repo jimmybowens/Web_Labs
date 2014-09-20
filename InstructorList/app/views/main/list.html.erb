@@ -1,0 +1,21 @@
+<table>
+	<tr id="black">
+		<th>Instructor ID</th>
+		<th>Instructor Name</th>
+		<th>Instructor Office Number</th>
+		<th>Instructor Email</th>
+	</tr>
+</table>
+<div class="scroll">
+<table>
+<%for instructor in @instructors do%>
+	<tr class="<%=cycle('even', 'odd') -%>">
+		<td><%=instructor.id%></td>
+    	<td><%=instructor.name%></td>
+    	<td><%=instructor.office_number%></td>
+    	<td><%=instructor.email%></td>
+    </tr>
+<%end%>
+
+</table>
+</div>

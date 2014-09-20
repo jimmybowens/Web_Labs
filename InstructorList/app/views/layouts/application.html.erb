@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+	<body>
+		
+<div class="wrapper">
+	<div class="header">
+		<h1 id="welcome-tag">Welcome to the instructor database for Towson University</h1>
+		<div id="action-tag">
+			
+			<table>
+				<tr>
+					<td>
+						<%= link_to "Home",    '/index.html', class: "btn btn-large btn-primary" %>
+					</td>
+					<td>
+						<%= link_to "Show Records",    '/list.html', class: "btn btn-large btn-primary" %>
+					</td>
+					<td>
+						<%= link_to "Add New Record",    '/new_record.html', class: "btn btn-large btn-primary" %>
+					</td>
+					<td>
+						<%= link_to "Update  Record",    '/update_record.html', class: "btn btn-large btn-primary" %>
+					</td>
+					<td>
+						<%= link_to "Find Record",    '/find_record.html', class: "btn btn-large btn-primary" %>
+					</td>
+				</tr>
+			
+			</table>
+		</div>
+	</div>
+	
+	<div class="content-tag">
+		<%= yield %>
+	</div>
+	
+</div>
+	</body>
+</html>
