@@ -4,16 +4,21 @@
 		<th>Instructor Name</th>
 		<th>Instructor Office Number</th>
 		<th>Instructor Email</th>
+		<td>Action</td>
 	</tr>
 </table>
 <div class="scroll">
-<table>
+<table class="table table-striped">
 <%for instructor in @instructors do%>
 	<tr class="<%=cycle('even', 'odd') -%>">
 		<td><%=instructor.id%></td>
     	<td><%=instructor.name%></td>
     	<td><%=instructor.office_number%></td>
     	<td><%=instructor.email%></td>
+    	<td>
+    		<%=link_to 'Update','#', :class=> 'btn btn-mini'%>
+    		<%= link_to 'Destroy','#', :method => :delete, :confirm => 'Are you sure?', :class => 'btn btn-mini btn-danger' %>
+    	</td>
     </tr>
 <%end%>
 

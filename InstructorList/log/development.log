@@ -357,3 +357,1519 @@ Processing by MainController#list as HTML
   [1m[35mInstructor Load (0.2ms)[0m  SELECT "instructors".* FROM "instructors"
   Rendered main/list.html.erb within layouts/application (0.6ms)
 Completed 200 OK in 43ms (Views: 42.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-20 19:41:47 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MainController#index as HTML
+  Rendered main/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 86ms (Views: 78.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-20 19:41:48 -0400
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-09-20 19:41:48 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-20 19:41:48 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-20 19:41:48 -0400
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-20 19:41:48 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-20 19:41:48 -0400
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-09-20 19:41:48 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-20 19:41:48 -0400
+
+
+Started GET "/list.html" for 127.0.0.1 at 2014-09-20 19:41:55 -0400
+Processing by MainController#list as HTML
+  [1m[35mInstructor Load (0.1ms)[0m  SELECT "instructors".* FROM "instructors"
+  Rendered main/list.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 44ms (Views: 41.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/index.html" for 127.0.0.1 at 2014-09-20 19:42:00 -0400
+Processing by MainController#index as HTML
+  Rendered main/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 75ms (Views: 74.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/list.html" for 127.0.0.1 at 2014-09-20 19:42:01 -0400
+Processing by MainController#list as HTML
+  [1m[36mInstructor Load (0.1ms)[0m  [1mSELECT "instructors".* FROM "instructors"[0m
+  Rendered main/list.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 43ms (Views: 42.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/new_record.html" for 127.0.0.1 at 2014-09-20 19:42:02 -0400
+Processing by MainController#new_record as HTML
+  Rendered main/new_record.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 50ms (Views: 49.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/update_record.html" for 127.0.0.1 at 2014-09-20 19:42:04 -0400
+Processing by MainController#update_record as HTML
+  Rendered main/update_record.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 41ms (Views: 40.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/find_record.html" for 127.0.0.1 at 2014-09-20 19:42:05 -0400
+Processing by MainController#find_record as HTML
+  Rendered main/find_record.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 46ms (Views: 45.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new_record.html" for 127.0.0.1 at 2014-09-20 19:42:06 -0400
+Processing by MainController#new_record as HTML
+  Rendered main/new_record.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 43ms (Views: 42.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/list.html" for 127.0.0.1 at 2014-09-20 19:42:08 -0400
+Processing by MainController#list as HTML
+  [1m[35mInstructor Load (0.1ms)[0m  SELECT "instructors".* FROM "instructors"
+  Rendered main/list.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 79ms (Views: 78.5ms | ActiveRecord: 0.1ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mSQL (0.9ms)[0m  DELETE FROM "instructors"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "instructors" ("created_at", "email", "name", "office_number", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", "2014-09-20 23:43:38.139529"], ["email", "something@gmail.com"], ["name", "John"], ["office_number", "434343"], ["updated_at", "2014-09-20 23:43:38.139529"]]
+  [1m[36m (0.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "instructors" ("created_at", "email", "name", "office_number", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", "2014-09-20 23:43:38.146211"], ["email", "something@gmail.com"], ["name", "Johnny"], ["office_number", "434343"], ["updated_at", "2014-09-20 23:43:38.146211"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "instructors" ("created_at", "email", "name", "office_number", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", "2014-09-20 23:43:38.147997"], ["email", "something@gmail.com"], ["name", "John Bowens"], ["office_number", "434343"], ["updated_at", "2014-09-20 23:43:38.147997"]]
+  [1m[36m (0.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "instructors" ("created_at", "email", "name", "office_number", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", "2014-09-20 23:43:38.149717"], ["email", "something@gmail.com"], ["name", "Johnny"], ["office_number", "434343"], ["updated_at", "2014-09-20 23:43:38.149717"]]
+  [1m[35m (0.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "instructors" ("created_at", "email", "name", "office_number", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", "2014-09-20 23:43:38.151328"], ["email", "something@gmail.com"], ["name", "Johnny"], ["office_number", "434343"], ["updated_at", "2014-09-20 23:43:38.151328"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "instructors" ("created_at", "email", "name", "office_number", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", "2014-09-20 23:43:38.152799"], ["email", "something@gmail.com"], ["name", "Johnny"], ["office_number", "434343"], ["updated_at", "2014-09-20 23:43:38.152799"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "instructors" ("created_at", "email", "name", "office_number", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", "2014-09-20 23:43:38.154304"], ["email", "something@gmail.com"], ["name", "Johnny"], ["office_number", "434343"], ["updated_at", "2014-09-20 23:43:38.154304"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "instructors" ("created_at", "email", "name", "office_number", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", "2014-09-20 23:43:38.155815"], ["email", "something@gmail.com"], ["name", "Johnny"], ["office_number", "434343"], ["updated_at", "2014-09-20 23:43:38.155815"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "instructors" ("created_at", "email", "name", "office_number", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", "2014-09-20 23:43:38.157327"], ["email", "something@gmail.com"], ["name", "Johnny"], ["office_number", "434343"], ["updated_at", "2014-09-20 23:43:38.157327"]]
+  [1m[36m (0.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "instructors" ("created_at", "email", "name", "office_number", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", "2014-09-20 23:43:38.158708"], ["email", "something@gmail.com"], ["name", "Johnny"], ["office_number", "434343"], ["updated_at", "2014-09-20 23:43:38.158708"]]
+  [1m[35m (0.5ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "instructors" ("created_at", "email", "name", "office_number", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", "2014-09-20 23:43:38.160072"], ["email", "something@gmail.com"], ["name", "Johnny"], ["office_number", "434343"], ["updated_at", "2014-09-20 23:43:38.160072"]]
+  [1m[36m (0.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "instructors" ("created_at", "email", "name", "office_number", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", "2014-09-20 23:43:38.161417"], ["email", "something@gmail.com"], ["name", "Johnny"], ["office_number", "434343"], ["updated_at", "2014-09-20 23:43:38.161417"]]
+  [1m[35m (0.5ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "instructors" ("created_at", "email", "name", "office_number", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", "2014-09-20 23:43:38.162716"], ["email", "something@gmail.com"], ["name", "Johnny"], ["office_number", "434343"], ["updated_at", "2014-09-20 23:43:38.162716"]]
+  [1m[36m (0.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "instructors" ("created_at", "email", "name", "office_number", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", "2014-09-20 23:43:38.164214"], ["email", "something @gmail.com"], ["name", "Johnny"], ["office_number", "434343"], ["updated_at", "2014-09-20 23:43:38.164214"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "instructors" ("created_at", "email", "name", "office_number", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", "2014-09-20 23:43:38.165894"], ["email", "something@gmail.com"], ["name", "Johnny"], ["office_number", "434343"], ["updated_at", "2014-09-20 23:43:38.165894"]]
+  [1m[36m (0.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "instructors" ("created_at", "email", "name", "office_number", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", "2014-09-20 23:43:38.167527"], ["email", "something@gmail.com"], ["name", "Johnny"], ["office_number", "434343"], ["updated_at", "2014-09-20 23:43:38.167527"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "instructors" ("created_at", "email", "name", "office_number", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", "2014-09-20 23:43:38.169191"], ["email", "something@gmail.com"], ["name", "Johnny"], ["office_number", "434343"], ["updated_at", "2014-09-20 23:43:38.169191"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "instructors" ("created_at", "email", "name", "office_number", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", "2014-09-20 23:43:38.170649"], ["email", "something@gmail.com"], ["name", "Johnny"], ["office_number", "434343"], ["updated_at", "2014-09-20 23:43:38.170649"]]
+  [1m[35m (0.5ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "instructors" ("created_at", "email", "name", "office_number", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", "2014-09-20 23:43:38.171923"], ["email", "something@gmail.com"], ["name", "Johnny"], ["office_number", "434343"], ["updated_at", "2014-09-20 23:43:38.171923"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "instructors" ("created_at", "email", "name", "office_number", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", "2014-09-20 23:43:38.173355"], ["email", "something@gmail.com"], ["name", "Johnny"], ["office_number", "434343"], ["updated_at", "2014-09-20 23:43:38.173355"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "instructors" ("created_at", "email", "name", "office_number", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", "2014-09-20 23:43:38.174776"], ["email", "something@gmail.com"], ["name", "John"], ["office_number", "434343"], ["updated_at", "2014-09-20 23:43:38.174776"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "instructors" ("created_at", "email", "name", "office_number", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", "2014-09-20 23:43:38.176191"], ["email", "something@gmail.com"], ["name", "Johnny"], ["office_number", "434343"], ["updated_at", "2014-09-20 23:43:38.176191"]]
+  [1m[35m (0.5ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "instructors" ("created_at", "email", "name", "office_number", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", "2014-09-20 23:43:38.177531"], ["email", "something@gmail.com"], ["name", "John Bowens"], ["office_number", "434343"], ["updated_at", "2014-09-20 23:43:38.177531"]]
+  [1m[36m (0.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "instructors" ("created_at", "email", "name", "office_number", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", "2014-09-20 23:43:38.178871"], ["email", "something@gmail.com"], ["name", "Johnny"], ["office_number", "434343"], ["updated_at", "2014-09-20 23:43:38.178871"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "instructors" ("created_at", "email", "name", "office_number", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", "2014-09-20 23:43:38.180336"], ["email", "something@gmail.com"], ["name", "Johnny"], ["office_number", "434343"], ["updated_at", "2014-09-20 23:43:38.180336"]]
+  [1m[36m (0.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "instructors" ("created_at", "email", "name", "office_number", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", "2014-09-20 23:43:38.181689"], ["email", "something@gmail.com"], ["name", "Johnny"], ["office_number", "434343"], ["updated_at", "2014-09-20 23:43:38.181689"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "instructors" ("created_at", "email", "name", "office_number", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", "2014-09-20 23:43:38.183259"], ["email", "something@gmail.com"], ["name", "Johnny"], ["office_number", "434343"], ["updated_at", "2014-09-20 23:43:38.183259"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "instructors" ("created_at", "email", "name", "office_number", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", "2014-09-20 23:43:38.184783"], ["email", "something@gmail.com"], ["name", "Johnny"], ["office_number", "434343"], ["updated_at", "2014-09-20 23:43:38.184783"]]
+  [1m[35m (0.5ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "instructors" ("created_at", "email", "name", "office_number", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", "2014-09-20 23:43:38.186180"], ["email", "something@gmail.com"], ["name", "Johnny"], ["office_number", "434343"], ["updated_at", "2014-09-20 23:43:38.186180"]]
+  [1m[36m (0.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "instructors" ("created_at", "email", "name", "office_number", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", "2014-09-20 23:43:38.187549"], ["email", "something@gmail.com"], ["name", "Johnny"], ["office_number", "434343"], ["updated_at", "2014-09-20 23:43:38.187549"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "instructors" ("created_at", "email", "name", "office_number", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", "2014-09-20 23:43:38.189012"], ["email", "something@gmail.com"], ["name", "Johnny"], ["office_number", "434343"], ["updated_at", "2014-09-20 23:43:38.189012"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "instructors" ("created_at", "email", "name", "office_number", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", "2014-09-20 23:43:38.190449"], ["email", "something@gmail.com"], ["name", "Johnny"], ["office_number", "434343"], ["updated_at", "2014-09-20 23:43:38.190449"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "instructors" ("created_at", "email", "name", "office_number", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", "2014-09-20 23:43:38.191859"], ["email", "something@gmail.com"], ["name", "Johnny"], ["office_number", "434343"], ["updated_at", "2014-09-20 23:43:38.191859"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "instructors" ("created_at", "email", "name", "office_number", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", "2014-09-20 23:43:38.193318"], ["email", "something @gmail.com"], ["name", "Johnny"], ["office_number", "434343"], ["updated_at", "2014-09-20 23:43:38.193318"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "instructors" ("created_at", "email", "name", "office_number", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", "2014-09-20 23:43:38.194911"], ["email", "something@gmail.com"], ["name", "Johnny"], ["office_number", "434343"], ["updated_at", "2014-09-20 23:43:38.194911"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "instructors" ("created_at", "email", "name", "office_number", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", "2014-09-20 23:43:38.196646"], ["email", "something@gmail.com"], ["name", "Johnny"], ["office_number", "434343"], ["updated_at", "2014-09-20 23:43:38.196646"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "instructors" ("created_at", "email", "name", "office_number", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", "2014-09-20 23:43:38.198172"], ["email", "something@gmail.com"], ["name", "Johnny"], ["office_number", "434343"], ["updated_at", "2014-09-20 23:43:38.198172"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "instructors" ("created_at", "email", "name", "office_number", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", "2014-09-20 23:43:38.199702"], ["email", "something@gmail.com"], ["name", "Johnny"], ["office_number", "434343"], ["updated_at", "2014-09-20 23:43:38.199702"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "instructors" ("created_at", "email", "name", "office_number", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", "2014-09-20 23:43:38.201102"], ["email", "something@gmail.com"], ["name", "Johnny"], ["office_number", "434343"], ["updated_at", "2014-09-20 23:43:38.201102"]]
+  [1m[36m (0.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "instructors" ("created_at", "email", "name", "office_number", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", "2014-09-20 23:43:38.202415"], ["email", "something@gmail.com"], ["name", "Johnny"], ["office_number", "434343"], ["updated_at", "2014-09-20 23:43:38.202415"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+
+
+Started GET "/list.html" for 127.0.0.1 at 2014-09-20 19:43:43 -0400
+Processing by MainController#list as HTML
+  [1m[36mInstructor Load (0.3ms)[0m  [1mSELECT "instructors".* FROM "instructors"[0m
+  Rendered main/list.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 51ms (Views: 50.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/list.html" for 127.0.0.1 at 2014-09-20 20:02:53 -0400
+Processing by MainController#list as HTML
+  [1m[35mInstructor Load (0.7ms)[0m  SELECT "instructors".* FROM "instructors"
+  Rendered main/list.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 145ms (Views: 143.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/list.html" for 127.0.0.1 at 2014-09-20 20:07:08 -0400
+Processing by MainController#list as HTML
+  [1m[36mInstructor Load (0.7ms)[0m  [1mSELECT "instructors".* FROM "instructors"[0m
+  Rendered main/list.html.erb within layouts/application (36.0ms)
+Completed 500 Internal Server Error in 40ms
+
+ActionView::Template::Error (undefined method `edit_instructor' for #<#<Class:0x007fbbfae84f00>:0x007fbbfab4d198>):
+    16:     	<td><%=instructor.office_number%></td>
+    17:     	<td><%=instructor.email%></td>
+    18:     	<td>
+    19:     		<%=link_to 'Update', edit_instructor(Instructor), :class=> 'btn btn-mini'%>
+    20:     	</td>
+    21:     </tr>
+    22: <%end%>
+  app/views/main/list.html.erb:19:in `block in _app_views_main_list_html_erb___1696170147330491825_70222670871180'
+  app/views/main/list.html.erb:12:in `_app_views_main_list_html_erb___1696170147330491825_70222670871180'
+
+
+  Rendered /Users/jimmybowens/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered /Users/jimmybowens/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.8ms)
+  Rendered /Users/jimmybowens/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (34.3ms)
+
+
+Started GET "/list.html" for 127.0.0.1 at 2014-09-20 20:09:01 -0400
+Processing by MainController#list as HTML
+  [1m[35mInstructor Load (0.7ms)[0m  SELECT "instructors".* FROM "instructors"
+  Rendered main/list.html.erb within layouts/application (27.3ms)
+Completed 200 OK in 160ms (Views: 157.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/list?class=btn+btn-mini" for 127.0.0.1 at 2014-09-20 20:09:05 -0400
+Processing by MainController#list as HTML
+  Parameters: {"class"=>"btn btn-mini"}
+  [1m[36mInstructor Load (0.6ms)[0m  [1mSELECT "instructors".* FROM "instructors"[0m
+  Rendered main/list.html.erb within layouts/application (22.2ms)
+Completed 200 OK in 135ms (Views: 133.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/list?class=btn+btn-mini" for 127.0.0.1 at 2014-09-20 20:09:08 -0400
+Processing by MainController#list as HTML
+  Parameters: {"class"=>"btn btn-mini"}
+  [1m[35mInstructor Load (0.6ms)[0m  SELECT "instructors".* FROM "instructors"
+  Rendered main/list.html.erb within layouts/application (20.5ms)
+Completed 200 OK in 171ms (Views: 169.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/list?class=btn+btn-mini" for 127.0.0.1 at 2014-09-20 20:09:11 -0400
+Processing by MainController#list as HTML
+  Parameters: {"class"=>"btn btn-mini"}
+  [1m[36mInstructor Load (1.0ms)[0m  [1mSELECT "instructors".* FROM "instructors"[0m
+  Rendered main/list.html.erb within layouts/application (24.0ms)
+Completed 200 OK in 147ms (Views: 145.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/list?class=btn+btn-mini" for 127.0.0.1 at 2014-09-20 20:09:15 -0400
+Processing by MainController#list as HTML
+  Parameters: {"class"=>"btn btn-mini"}
+  [1m[35mInstructor Load (1.0ms)[0m  SELECT "instructors".* FROM "instructors"
+  Rendered main/list.html.erb within layouts/application (28.3ms)
+Completed 200 OK in 155ms (Views: 152.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/list.html" for 127.0.0.1 at 2014-09-20 20:10:58 -0400
+Processing by MainController#list as HTML
+  [1m[36mInstructor Load (0.6ms)[0m  [1mSELECT "instructors".* FROM "instructors"[0m
+  Rendered main/list.html.erb within layouts/application (11.4ms)
+Completed 200 OK in 150ms (Views: 147.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/list.html" for 127.0.0.1 at 2014-09-20 20:11:05 -0400
+Processing by MainController#list as HTML
+  [1m[35mInstructor Load (0.7ms)[0m  SELECT "instructors".* FROM "instructors"
+  Rendered main/list.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 140ms (Views: 138.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/list.html" for 127.0.0.1 at 2014-09-20 20:13:14 -0400
+Processing by MainController#list as HTML
+  [1m[36mInstructor Load (1.0ms)[0m  [1mSELECT "instructors".* FROM "instructors"[0m
+  Rendered main/list.html.erb within layouts/application (29.0ms)
+Completed 500 Internal Server Error in 35ms
+
+ActionView::Template::Error (undefined local variable or method `id' for #<#<Class:0x007fbbfae84f00>:0x007fbbfb47d0d8>):
+    11: <table>
+    12: <%for instructor in @instructors do%>
+    13: 	<tr class="<%=cycle('even', 'odd') -%>">
+    14: 		<td><%= link_to instructor.id, instructor_path(id)%></td>
+    15:     	<td><%=instructor.name%></td>
+    16:     	<td><%=instructor.office_number%></td>
+    17:     	<td><%=instructor.email%></td>
+  app/views/main/list.html.erb:14:in `block in _app_views_main_list_html_erb___1696170147330491825_70222675721740'
+  app/views/main/list.html.erb:12:in `_app_views_main_list_html_erb___1696170147330491825_70222675721740'
+
+
+  Rendered /Users/jimmybowens/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /Users/jimmybowens/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /Users/jimmybowens/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (25.7ms)
+
+
+Started GET "/list.html" for 127.0.0.1 at 2014-09-20 20:13:15 -0400
+Processing by MainController#list as HTML
+  [1m[35mInstructor Load (1.0ms)[0m  SELECT "instructors".* FROM "instructors"
+  Rendered main/list.html.erb within layouts/application (33.6ms)
+Completed 500 Internal Server Error in 40ms
+
+ActionView::Template::Error (undefined local variable or method `id' for #<#<Class:0x007fbbfae84f00>:0x007fbbfb6d4228>):
+    11: <table>
+    12: <%for instructor in @instructors do%>
+    13: 	<tr class="<%=cycle('even', 'odd') -%>">
+    14: 		<td><%= link_to instructor.id, instructor_path(id)%></td>
+    15:     	<td><%=instructor.name%></td>
+    16:     	<td><%=instructor.office_number%></td>
+    17:     	<td><%=instructor.email%></td>
+  app/views/main/list.html.erb:14:in `block in _app_views_main_list_html_erb___1696170147330491825_70222675721740'
+  app/views/main/list.html.erb:12:in `_app_views_main_list_html_erb___1696170147330491825_70222675721740'
+
+
+  Rendered /Users/jimmybowens/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /Users/jimmybowens/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /Users/jimmybowens/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (28.3ms)
+
+
+Started GET "/list.html" for 127.0.0.1 at 2014-09-20 20:13:18 -0400
+Processing by MainController#list as HTML
+  [1m[36mInstructor Load (0.6ms)[0m  [1mSELECT "instructors".* FROM "instructors"[0m
+  Rendered main/list.html.erb within layouts/application (23.3ms)
+Completed 500 Internal Server Error in 27ms
+
+ActionView::Template::Error (undefined local variable or method `id' for #<#<Class:0x007fbbfae84f00>:0x007fbc00179df0>):
+    11: <table>
+    12: <%for instructor in @instructors do%>
+    13: 	<tr class="<%=cycle('even', 'odd') -%>">
+    14: 		<td><%= link_to instructor.id, instructor_path(id)%></td>
+    15:     	<td><%=instructor.name%></td>
+    16:     	<td><%=instructor.office_number%></td>
+    17:     	<td><%=instructor.email%></td>
+  app/views/main/list.html.erb:14:in `block in _app_views_main_list_html_erb___1696170147330491825_70222675721740'
+  app/views/main/list.html.erb:12:in `_app_views_main_list_html_erb___1696170147330491825_70222675721740'
+
+
+  Rendered /Users/jimmybowens/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /Users/jimmybowens/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /Users/jimmybowens/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (25.4ms)
+
+
+Started GET "/list.html" for 127.0.0.1 at 2014-09-20 20:14:09 -0400
+Processing by MainController#list as HTML
+  [1m[35mInstructor Load (0.6ms)[0m  SELECT "instructors".* FROM "instructors"
+  Rendered main/list.html.erb within layouts/application (24.0ms)
+Completed 500 Internal Server Error in 30ms
+
+ActionView::Template::Error (undefined method `instructor_path' for #<#<Class:0x007fbbfae84f00>:0x007fbc00493b58>):
+    11: <table>
+    12: <%for instructor in @instructors do%>
+    13: 	<tr class="<%=cycle('even', 'odd') -%>">
+    14: 		<td><%= link_to instructor.id, instructor_path(instructor)%></td>
+    15:     	<td><%=instructor.name%></td>
+    16:     	<td><%=instructor.office_number%></td>
+    17:     	<td><%=instructor.email%></td>
+  app/views/main/list.html.erb:14:in `block in _app_views_main_list_html_erb___1696170147330491825_70222717686480'
+  app/views/main/list.html.erb:12:in `_app_views_main_list_html_erb___1696170147330491825_70222717686480'
+
+
+  Rendered /Users/jimmybowens/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /Users/jimmybowens/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /Users/jimmybowens/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (24.7ms)
+
+
+Started GET "/list.html" for 127.0.0.1 at 2014-09-20 20:22:18 -0400
+Processing by MainController#list as HTML
+  [1m[36mInstructor Load (0.3ms)[0m  [1mSELECT "instructors".* FROM "instructors"[0m
+  Rendered main/list.html.erb within layouts/application (16.9ms)
+Completed 500 Internal Server Error in 19ms
+
+ActionView::Template::Error (undefined method `instructor_path' for #<#<Class:0x007fbbfae84f00>:0x007fbbfee58028>):
+    11: <table>
+    12: <%for instructor in @instructors do%>
+    13: 	<tr class="<%=cycle('even', 'odd') -%>">
+    14: 		<td><%= link_to instructor.id, instructor_path(instructor)%></td>
+    15:     	<td><%=instructor.name%></td>
+    16:     	<td><%=instructor.office_number%></td>
+    17:     	<td><%=instructor.email%></td>
+  app/views/main/list.html.erb:14:in `block in _app_views_main_list_html_erb___1696170147330491825_70222706136480'
+  app/views/main/list.html.erb:12:in `_app_views_main_list_html_erb___1696170147330491825_70222706136480'
+
+
+  Rendered /Users/jimmybowens/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/jimmybowens/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/jimmybowens/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (10.6ms)
+
+
+Started GET "/list.html" for 127.0.0.1 at 2014-09-20 20:22:52 -0400
+Processing by MainController#list as HTML
+  [1m[35mInstructor Load (0.3ms)[0m  SELECT "instructors".* FROM "instructors"
+  Rendered main/list.html.erb within layouts/application (14.1ms)
+Completed 200 OK in 60ms (Views: 59.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-20 20:22:52 -0400
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-09-20 20:22:52 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-20 20:22:52 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-20 20:22:52 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-20 20:22:52 -0400
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-09-20 20:22:52 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-20 20:22:52 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-20 20:22:52 -0400
+
+
+Started GET "/list" for 127.0.0.1 at 2014-09-20 20:22:56 -0400
+Processing by MainController#list as HTML
+  [1m[36mInstructor Load (0.3ms)[0m  [1mSELECT "instructors".* FROM "instructors"[0m
+  Rendered main/list.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 58ms (Views: 57.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/list" for 127.0.0.1 at 2014-09-20 20:22:57 -0400
+Processing by MainController#list as HTML
+  [1m[35mInstructor Load (0.4ms)[0m  SELECT "instructors".* FROM "instructors"
+  Rendered main/list.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 64ms (Views: 63.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/list" for 127.0.0.1 at 2014-09-20 20:23:00 -0400
+Processing by MainController#list as HTML
+  [1m[36mInstructor Load (0.2ms)[0m  [1mSELECT "instructors".* FROM "instructors"[0m
+  Rendered main/list.html.erb within layouts/application (11.5ms)
+Completed 200 OK in 58ms (Views: 56.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/list" for 127.0.0.1 at 2014-09-20 20:23:02 -0400
+Processing by MainController#list as HTML
+  [1m[35mInstructor Load (0.3ms)[0m  SELECT "instructors".* FROM "instructors"
+  Rendered main/list.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 71ms (Views: 70.4ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/list" for 127.0.0.1 at 2014-09-20 20:23:11 -0400
+
+ActionController::RoutingError (No route matches [DELETE] "/list"):
+  actionpack (4.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.6) lib/rails/engine.rb:514:in `call'
+  railties (4.1.6) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/jimmybowens/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/jimmybowens/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/jimmybowens/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/jimmybowens/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Users/jimmybowens/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.2ms)
+  Rendered /Users/jimmybowens/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (11.6ms)
+  Rendered /Users/jimmybowens/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (35.3ms)
+
+
+Started DELETE "/list" for 127.0.0.1 at 2014-09-20 20:23:22 -0400
+
+ActionController::RoutingError (No route matches [DELETE] "/list"):
+  actionpack (4.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.6) lib/rails/engine.rb:514:in `call'
+  railties (4.1.6) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/jimmybowens/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/jimmybowens/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/jimmybowens/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/jimmybowens/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Users/jimmybowens/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.2ms)
+  Rendered /Users/jimmybowens/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.9ms)
+  Rendered /Users/jimmybowens/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (17.2ms)
+
+
+Started DELETE "/list" for 127.0.0.1 at 2014-09-20 20:23:54 -0400
+
+ActionController::RoutingError (No route matches [DELETE] "/list"):
+  actionpack (4.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.6) lib/rails/engine.rb:514:in `call'
+  railties (4.1.6) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/jimmybowens/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/jimmybowens/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/jimmybowens/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/jimmybowens/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/jimmybowens/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.1ms)
+  Rendered /Users/jimmybowens/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /Users/jimmybowens/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (16.0ms)
+
+
+Started DELETE "/list" for 127.0.0.1 at 2014-09-20 20:24:42 -0400
+
+ActionController::RoutingError (No route matches [DELETE] "/list"):
+  actionpack (4.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.6) lib/rails/engine.rb:514:in `call'
+  railties (4.1.6) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/jimmybowens/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/jimmybowens/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/jimmybowens/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/jimmybowens/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.8ms)
+  Rendered /Users/jimmybowens/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered /Users/jimmybowens/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /Users/jimmybowens/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (14.5ms)
+
+
+Started GET "/list" for 127.0.0.1 at 2014-09-20 20:24:48 -0400
+Processing by MainController#list as HTML
+  [1m[36mInstructor Load (0.3ms)[0m  [1mSELECT "instructors".* FROM "instructors"[0m
+  Rendered main/list.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 53ms (Views: 52.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-20 20:24:48 -0400
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-09-20 20:24:48 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-20 20:24:48 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-20 20:24:48 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-20 20:24:48 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-20 20:24:48 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-20 20:24:48 -0400
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-09-20 20:24:48 -0400
+
+
+Started DELETE "/list" for 127.0.0.1 at 2014-09-20 20:24:51 -0400
+
+ActionController::RoutingError (No route matches [DELETE] "/list"):
+  actionpack (4.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.6) lib/rails/engine.rb:514:in `call'
+  railties (4.1.6) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/jimmybowens/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/jimmybowens/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/jimmybowens/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/jimmybowens/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/jimmybowens/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.2ms)
+  Rendered /Users/jimmybowens/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /Users/jimmybowens/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (15.3ms)
+
+
+Started GET "/list" for 127.0.0.1 at 2014-09-20 20:27:09 -0400
+Processing by MainController#list as HTML
+  [1m[35mInstructor Load (0.2ms)[0m  SELECT "instructors".* FROM "instructors"
+  Rendered main/list.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 52ms (Views: 51.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-20 20:27:09 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-20 20:27:09 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-20 20:27:09 -0400
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-09-20 20:27:09 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-20 20:27:09 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-20 20:27:09 -0400
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-09-20 20:27:09 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-20 20:27:09 -0400
+
+
+Started GET "/list.html" for 127.0.0.1 at 2014-09-20 20:27:21 -0400
+Processing by MainController#list as HTML
+  [1m[36mInstructor Load (0.6ms)[0m  [1mSELECT "instructors".* FROM "instructors"[0m
+  Rendered main/list.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 54ms (Views: 53.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/index.html" for 127.0.0.1 at 2014-09-20 20:27:29 -0400
+Processing by MainController#index as HTML
+  Rendered main/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 45ms (Views: 44.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/list.html" for 127.0.0.1 at 2014-09-20 20:27:30 -0400
+Processing by MainController#list as HTML
+  [1m[35mInstructor Load (0.2ms)[0m  SELECT "instructors".* FROM "instructors"
+  Rendered main/list.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 65ms (Views: 64.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/new_record.html" for 127.0.0.1 at 2014-09-20 20:27:32 -0400
+Processing by MainController#new_record as HTML
+  Rendered main/new_record.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 51ms (Views: 50.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/update_record.html" for 127.0.0.1 at 2014-09-20 20:27:33 -0400
+Processing by MainController#update_record as HTML
+  Rendered main/update_record.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 50ms (Views: 49.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/find_record.html" for 127.0.0.1 at 2014-09-20 20:27:34 -0400
+Processing by MainController#find_record as HTML
+  Rendered main/find_record.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 47ms (Views: 46.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/list.html" for 127.0.0.1 at 2014-09-20 20:27:36 -0400
+Processing by MainController#list as HTML
+  [1m[36mInstructor Load (0.3ms)[0m  [1mSELECT "instructors".* FROM "instructors"[0m
+  Rendered main/list.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 54ms (Views: 53.3ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/list.html" for 127.0.0.1 at 2014-09-20 20:27:40 -0400
+
+ActionController::RoutingError (No route matches [DELETE] "/list.html"):
+  actionpack (4.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.6) lib/rails/engine.rb:514:in `call'
+  railties (4.1.6) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/jimmybowens/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/jimmybowens/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/jimmybowens/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/jimmybowens/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.8ms)
+  Rendered /Users/jimmybowens/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered /Users/jimmybowens/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.9ms)
+  Rendered /Users/jimmybowens/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (15.0ms)
+
+
+Started GET "/list.html" for 127.0.0.1 at 2014-09-20 20:27:44 -0400
+Processing by MainController#list as HTML
+  [1m[35mInstructor Load (0.3ms)[0m  SELECT "instructors".* FROM "instructors"
+  Rendered main/list.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 60ms (Views: 59.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/list.html" for 127.0.0.1 at 2014-09-20 20:27:45 -0400
+Processing by MainController#list as HTML
+  [1m[36mInstructor Load (0.3ms)[0m  [1mSELECT "instructors".* FROM "instructors"[0m
+  Rendered main/list.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 57ms (Views: 56.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/list.html" for 127.0.0.1 at 2014-09-20 20:41:04 -0400
+Processing by MainController#list as HTML
+  [1m[35mInstructor Load (0.4ms)[0m  SELECT "instructors".* FROM "instructors"
+  Rendered main/list.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 53ms (Views: 52.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-20 20:41:04 -0400
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-09-20 20:41:04 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-20 20:41:04 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-20 20:41:04 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-20 20:41:04 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-20 20:41:04 -0400
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-09-20 20:41:04 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-20 20:41:04 -0400
+
+
+Started GET "/list.html" for 127.0.0.1 at 2014-09-20 20:41:06 -0400
+Processing by MainController#list as HTML
+  [1m[36mInstructor Load (0.3ms)[0m  [1mSELECT "instructors".* FROM "instructors"[0m
+  Rendered main/list.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 54ms (Views: 53.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/new_record.html" for 127.0.0.1 at 2014-09-20 20:41:07 -0400
+Processing by MainController#new_record as HTML
+  Rendered main/new_record.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 49ms (Views: 48.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2014-09-20 20:41:29 -0400
+Processing by MainController#login as HTML
+  Rendered main/login.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 64ms (Views: 63.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-09-20 20:41:29 -0400
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-20 20:41:29 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-20 20:41:29 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-20 20:41:29 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-20 20:41:29 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-20 20:41:29 -0400
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-09-20 20:41:29 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-20 20:41:29 -0400
+
+
+Started GET "/login" for 127.0.0.1 at 2014-09-20 20:44:59 -0400
+Processing by MainController#login as HTML
+  Rendered main/login.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 56ms (Views: 55.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-20 20:44:59 -0400
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-09-20 20:44:59 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-20 20:44:59 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-20 20:44:59 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-20 20:44:59 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-20 20:44:59 -0400
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-09-20 20:44:59 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-20 20:44:59 -0400
+
+
+Started GET "/list.html" for 127.0.0.1 at 2014-09-20 20:45:02 -0400
+Processing by MainController#list as HTML
+  [1m[35mInstructor Load (0.3ms)[0m  SELECT "instructors".* FROM "instructors"
+  Rendered main/list.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 55ms (Views: 54.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/list.html" for 127.0.0.1 at 2014-09-20 20:45:08 -0400
+Processing by MainController#list as HTML
+  [1m[36mInstructor Load (0.4ms)[0m  [1mSELECT "instructors".* FROM "instructors"[0m
+  Rendered main/list.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 53ms (Views: 51.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/index.html" for 127.0.0.1 at 2014-09-20 20:45:09 -0400
+Processing by MainController#index as HTML
+  Rendered main/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 51ms (Views: 50.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new_record.html" for 127.0.0.1 at 2014-09-20 20:45:11 -0400
+Processing by MainController#new_record as HTML
+  Rendered main/new_record.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 47ms (Views: 46.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/list.html" for 127.0.0.1 at 2014-09-20 20:45:12 -0400
+Processing by MainController#list as HTML
+  [1m[35mInstructor Load (0.2ms)[0m  SELECT "instructors".* FROM "instructors"
+  Rendered main/list.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 56ms (Views: 55.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/list.html" for 127.0.0.1 at 2014-09-20 20:46:20 -0400
+Processing by MainController#list as HTML
+  [1m[36mInstructor Load (0.3ms)[0m  [1mSELECT "instructors".* FROM "instructors"[0m
+  Rendered main/list.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 87ms (Views: 86.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-20 20:46:20 -0400
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-09-20 20:46:20 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-20 20:46:20 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-20 20:46:20 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-20 20:46:20 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-20 20:46:20 -0400
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-09-20 20:46:20 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-20 20:46:20 -0400
+
+
+Started GET "/find_record.html" for 127.0.0.1 at 2014-09-20 20:46:26 -0400
+Processing by MainController#find_record as HTML
+  Rendered main/find_record.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 62ms (Views: 61.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/update_record.html" for 127.0.0.1 at 2014-09-20 20:46:27 -0400
+Processing by MainController#update_record as HTML
+  Rendered main/update_record.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 49ms (Views: 48.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new_record.html" for 127.0.0.1 at 2014-09-20 20:46:27 -0400
+Processing by MainController#new_record as HTML
+  Rendered main/new_record.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 46ms (Views: 45.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/list.html" for 127.0.0.1 at 2014-09-20 20:46:28 -0400
+Processing by MainController#list as HTML
+  [1m[35mInstructor Load (0.3ms)[0m  SELECT "instructors".* FROM "instructors"
+  Rendered main/list.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 59ms (Views: 58.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/index.html" for 127.0.0.1 at 2014-09-20 20:46:30 -0400
+Processing by MainController#index as HTML
+  Rendered main/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 50ms (Views: 49.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/list.html" for 127.0.0.1 at 2014-09-20 20:46:31 -0400
+Processing by MainController#list as HTML
+  [1m[36mInstructor Load (0.2ms)[0m  [1mSELECT "instructors".* FROM "instructors"[0m
+  Rendered main/list.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 54ms (Views: 52.4ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/list.html" for 127.0.0.1 at 2014-09-20 20:46:36 -0400
+
+ActionController::RoutingError (No route matches [DELETE] "/list.html"):
+  actionpack (4.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.6) lib/rails/engine.rb:514:in `call'
+  railties (4.1.6) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/jimmybowens/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/jimmybowens/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/jimmybowens/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/jimmybowens/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/jimmybowens/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.7ms)
+  Rendered /Users/jimmybowens/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /Users/jimmybowens/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (18.0ms)
+
+
+Started GET "/list.html" for 127.0.0.1 at 2014-09-20 20:48:59 -0400
+Processing by MainController#list as HTML
+  [1m[35mInstructor Load (0.3ms)[0m  SELECT "instructors".* FROM "instructors"
+  Rendered main/list.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 55ms (Views: 54.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-20 20:49:00 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-20 20:49:00 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-20 20:49:00 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-20 20:49:00 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-20 20:49:00 -0400
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-09-20 20:49:00 -0400
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-09-20 20:49:00 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-20 20:49:00 -0400
+
+
+Started GET "/new_record.html" for 127.0.0.1 at 2014-09-20 20:49:05 -0400
+Processing by MainController#new_record as HTML
+  Rendered main/new_record.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 49ms (Views: 48.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-20 20:51:16 -0400
+Processing by MainController#index as HTML
+  Rendered main/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 48ms (Views: 47.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-09-20 20:51:16 -0400
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-20 20:51:16 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-20 20:51:16 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-20 20:51:16 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-20 20:51:16 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-20 20:51:16 -0400
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-09-20 20:51:16 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-20 20:51:16 -0400
+
+
+Started GET "/new_record.html" for 127.0.0.1 at 2014-09-20 20:51:19 -0400
+Processing by MainController#new_record as HTML
+  Rendered main/new_record.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 56ms (Views: 55.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new_record.html" for 127.0.0.1 at 2014-09-20 20:52:29 -0400
+Processing by MainController#new_record as HTML
+  Rendered main/new_record.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 44ms (Views: 44.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-20 20:52:29 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-20 20:52:29 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-20 20:52:29 -0400
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-09-20 20:52:29 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-20 20:52:29 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-20 20:52:29 -0400
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-09-20 20:52:29 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-20 20:52:29 -0400
+
+
+Started GET "/new_record.html" for 127.0.0.1 at 2014-09-20 20:53:43 -0400
+Processing by MainController#new_record as HTML
+  Rendered main/new_record.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 51ms (Views: 50.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-20 20:53:43 -0400
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-09-20 20:53:43 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-20 20:53:43 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-20 20:53:43 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-20 20:53:43 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-20 20:53:43 -0400
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-09-20 20:53:43 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-20 20:53:43 -0400
+
+
+Started GET "/list.html" for 127.0.0.1 at 2014-09-20 20:53:46 -0400
+Processing by MainController#list as HTML
+  [1m[36mInstructor Load (0.3ms)[0m  [1mSELECT "instructors".* FROM "instructors"[0m
+  Rendered main/list.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 52ms (Views: 51.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/new_record.html" for 127.0.0.1 at 2014-09-20 20:53:47 -0400
+Processing by MainController#new_record as HTML
+  Rendered main/new_record.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 53ms (Views: 52.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new_record.html" for 127.0.0.1 at 2014-09-20 20:54:56 -0400
+Processing by MainController#new_record as HTML
+  Rendered main/new_record.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 52ms (Views: 52.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-20 20:54:56 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-20 20:54:56 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-20 20:54:56 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-20 20:54:56 -0400
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-09-20 20:54:56 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-20 20:54:56 -0400
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-09-20 20:54:56 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-20 20:54:56 -0400
+
+
+Started GET "/new_record.html" for 127.0.0.1 at 2014-09-20 20:55:00 -0400
+Processing by MainController#new_record as HTML
+  Rendered main/new_record.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 49ms (Views: 47.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-09-20 20:55:00 -0400
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-20 20:55:00 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-20 20:55:00 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-20 20:55:00 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-20 20:55:00 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-20 20:55:00 -0400
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-09-20 20:55:00 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-20 20:55:00 -0400
+
+
+Started GET "/new_record.html" for 127.0.0.1 at 2014-09-20 20:55:05 -0400
+Processing by MainController#new_record as HTML
+  Rendered main/new_record.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 79ms (Views: 78.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/list.html" for 127.0.0.1 at 2014-09-20 20:55:06 -0400
+Processing by MainController#list as HTML
+  [1m[35mInstructor Load (0.4ms)[0m  SELECT "instructors".* FROM "instructors"
+  Rendered main/list.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 55ms (Views: 53.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/new_record.html" for 127.0.0.1 at 2014-09-20 20:55:07 -0400
+Processing by MainController#new_record as HTML
+  Rendered main/new_record.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 53ms (Views: 52.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new_record.html" for 127.0.0.1 at 2014-09-20 20:57:21 -0400
+Processing by MainController#new_record as HTML
+  Rendered main/new_record.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 56ms (Views: 55.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-20 20:57:21 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-20 20:57:21 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-20 20:57:21 -0400
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-09-20 20:57:21 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-20 20:57:21 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-20 20:57:21 -0400
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-09-20 20:57:21 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-20 20:57:21 -0400
+
+
+Started GET "/new_record.html" for 127.0.0.1 at 2014-09-20 20:57:23 -0400
+Processing by MainController#new_record as HTML
+  Rendered main/new_record.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 50ms (Views: 49.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/list.html" for 127.0.0.1 at 2014-09-20 20:57:24 -0400
+Processing by MainController#list as HTML
+  [1m[36mInstructor Load (0.4ms)[0m  [1mSELECT "instructors".* FROM "instructors"[0m
+  Rendered main/list.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 56ms (Views: 53.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/index.html" for 127.0.0.1 at 2014-09-20 20:57:25 -0400
+Processing by MainController#index as HTML
+  Rendered main/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 47ms (Views: 46.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/list.html" for 127.0.0.1 at 2014-09-20 20:57:26 -0400
+Processing by MainController#list as HTML
+  [1m[35mInstructor Load (0.3ms)[0m  SELECT "instructors".* FROM "instructors"
+  Rendered main/list.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 55ms (Views: 54.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/new_record.html" for 127.0.0.1 at 2014-09-20 20:57:27 -0400
+Processing by MainController#new_record as HTML
+  Rendered main/new_record.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 55ms (Views: 54.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new_record.html" for 127.0.0.1 at 2014-09-20 20:57:30 -0400
+Processing by MainController#new_record as HTML
+  Rendered main/new_record.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 54ms (Views: 53.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new_record.html" for 127.0.0.1 at 2014-09-20 20:57:46 -0400
+Processing by MainController#new_record as HTML
+  Rendered main/new_record.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 44ms (Views: 43.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-20 20:57:46 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-20 20:57:46 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-20 20:57:46 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-20 20:57:46 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-20 20:57:46 -0400
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-09-20 20:57:46 -0400
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-09-20 20:57:46 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-20 20:57:46 -0400
+
+
+Started GET "/new_record.html" for 127.0.0.1 at 2014-09-20 20:57:47 -0400
+Processing by MainController#new_record as HTML
+  Rendered main/new_record.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 47ms (Views: 46.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new_record.html" for 127.0.0.1 at 2014-09-20 21:03:47 -0400
+Processing by MainController#new_record as HTML
+Completed 500 Internal Server Error in 3ms
+
+NameError (undefined local variable or method `instructor_email' for #<MainController:0x007fbbfea89ac8>):
+  app/controllers/main_controller.rb:24:in `new_record'
+
+
+  Rendered /Users/jimmybowens/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Users/jimmybowens/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/jimmybowens/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/jimmybowens/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.3ms)
+
+
+Started GET "/new_record.html" for 127.0.0.1 at 2014-09-20 21:04:52 -0400
+Processing by MainController#new_record as HTML
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "instructors" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", "2014-09-21 01:04:52.181214"], ["updated_at", "2014-09-21 01:04:52.181214"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  Rendered main/new_record.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 63ms (Views: 45.7ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-20 21:04:52 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-20 21:04:52 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-20 21:04:52 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-20 21:04:52 -0400
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-09-20 21:04:52 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-20 21:04:52 -0400
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-09-20 21:04:52 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-20 21:04:52 -0400
+
+
+Started GET "/new_record.html" for 127.0.0.1 at 2014-09-20 21:04:54 -0400
+Processing by MainController#new_record as HTML
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "instructors" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2014-09-21 01:04:54.875339"], ["updated_at", "2014-09-21 01:04:54.875339"]]
+  [1m[35m (6.8ms)[0m  commit transaction
+  Rendered main/new_record.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 69ms (Views: 60.3ms | ActiveRecord: 7.1ms)
+
+
+Started GET "/new_record.html" for 127.0.0.1 at 2014-09-20 21:04:56 -0400
+Processing by MainController#new_record as HTML
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "instructors" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", "2014-09-21 01:04:56.786532"], ["updated_at", "2014-09-21 01:04:56.786532"]]
+  [1m[36m (6.6ms)[0m  [1mcommit transaction[0m
+  Rendered main/new_record.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 54ms (Views: 45.3ms | ActiveRecord: 7.0ms)
+
+
+Started GET "/new_record.html" for 127.0.0.1 at 2014-09-20 21:04:57 -0400
+Processing by MainController#new_record as HTML
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "instructors" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2014-09-21 01:04:57.787101"], ["updated_at", "2014-09-21 01:04:57.787101"]]
+  [1m[35m (6.7ms)[0m  commit transaction
+  Rendered main/new_record.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 54ms (Views: 44.8ms | ActiveRecord: 7.1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-20 21:04:57 -0400
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-20 21:04:57 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-20 21:04:57 -0400
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-09-20 21:04:57 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-20 21:04:57 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-20 21:04:57 -0400
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-09-20 21:04:57 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-20 21:04:57 -0400
+
+
+Started GET "/new_record.html" for 127.0.0.1 at 2014-09-20 21:05:13 -0400
+Processing by MainController#new_record as HTML
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "instructors" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", "2014-09-21 01:05:13.985665"], ["updated_at", "2014-09-21 01:05:13.985665"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  Rendered main/new_record.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 55ms (Views: 50.1ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-09-20 21:05:14 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-20 21:05:14 -0400
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-09-20 21:05:14 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-20 21:05:14 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-20 21:05:14 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-20 21:05:14 -0400
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-09-20 21:05:14 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-20 21:05:14 -0400
+
+
+Started GET "/list.html" for 127.0.0.1 at 2014-09-20 21:05:17 -0400
+Processing by MainController#list as HTML
+  [1m[35mInstructor Load (0.4ms)[0m  SELECT "instructors".* FROM "instructors"
+  Rendered main/list.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 54ms (Views: 52.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/new_record.html" for 127.0.0.1 at 2014-09-20 21:05:31 -0400
+Processing by MainController#new_record as HTML
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "instructors" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", "2014-09-21 01:05:31.912975"], ["updated_at", "2014-09-21 01:05:31.912975"]]
+  [1m[36m (6.9ms)[0m  [1mcommit transaction[0m
+  Rendered main/new_record.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 56ms (Views: 47.3ms | ActiveRecord: 7.3ms)
+
+
+Started GET "/list.html" for 127.0.0.1 at 2014-09-20 21:05:32 -0400
+Processing by MainController#list as HTML
+  [1m[35mInstructor Load (0.3ms)[0m  SELECT "instructors".* FROM "instructors"
+  Rendered main/list.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 57ms (Views: 56.1ms | ActiveRecord: 0.3ms)
