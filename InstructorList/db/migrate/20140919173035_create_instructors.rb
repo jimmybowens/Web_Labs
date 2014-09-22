@@ -4,6 +4,7 @@ class CreateInstructors < ActiveRecord::Migration
       t.string :name
       t.string :office_number
       t.string :email
+	  t.string :department
 
       t.timestamps
     end
